@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+   span{
+       display: inline-block;
+       width: 200px;
+      
+   }
+   .ff{
+       border-radius: 50%;
+       width: 200px;  
+       box-shadow: 3px 3px 5px 3px #ccc;
+       height: 200px;;
+       border:5px dashed;
+       text-align:center;
+       line-height: 200px;
+       background: -webkit-linear-gradient(left top,blue,red,green,#ccc)
+   }
+   .cc{
+       width: 200px;
+       height: 200px;
+       border:10px solid #ccc;
+       /* border-radius: 100px; */
+       padding:10px;
+       box-sizing:border-box;
+
+   }
+</style>
+<script>
+     var name='珠峰',age=8;
+     var stt=`我的名字是${name},我的年龄是${age}`;
+    console.log(stt);
+    console.log(NaN ==NaN);
+    // console.log([]==false);//数组是引用数据类型，会先转成字符串，再把字符串转成数字
+    // console.log('0'===0);
+    // console.log(![]==false);//[]空值也是true，![]将它取反为false，     空数组转换为布尔类型再去取非为true，true再去取反即为false
+  //== 相对比较 转成同一类型再去比较
+   // === -->绝对比较：先看两边是不是 同一个数据类型，若不是直接False，若是再去比较值是否把两边都转成数字再去比较   
+        // var a=1 && 2; var b=3||4;
+        // console.log(a,b);
+
+        // var a=b=c=d=[1,2,3,4];
+        // console.log( a == b);
+        // c=[1,2,3,5];
+        // console.log(a,b,c,d);
+
+        // b=[111,2,3];
+        // b[2]=40;
+        // console.log(a,b,c);
+
+        // var ss='q123.1';
+        // console.log(Number(ss));
+        // console.log(parseInt(ss));//只要第一个字符是非数字结果就是Nan
+    //Nan = (not a number null) none      
+    //空字符串 或者字符串只有空格 那么Number得到的结果都是0；
+    //布尔类型中有五个是FALSER ，其他的全部是 true; ---->Boolean 
+    //  !---->代表取反要把取反的数据类型转化为布尔类型，然后再去取反，
+    //  !!---->代表取反再取反，这个操作的效果等同于Boolean()转化
+    // == 相对比较---->会把两边的数据类型转成同一种类型再比较
+     /*   js 中基本的数据类型  ：string number boolean null undefined    基本数据类型操作的都是一个值；
+            引用数据类型：[] {} function Date  Math 正则 ...  引用数据类型操作的都是一个地址
+          
+            'ss' 若用单引号包含单引号，需用\把字符串的单引号转义
+            number 类型:Number();parseInt();parseFloat(); 1/'a' ; isNaN(1/'a')//判断参数是否是NaN,若是返回true,否则返回false 
+            NaN == NaN //False 结果永远不相等
+            typeof() --->查看数据类型用的，返回结果是个字符串
+            
+      */
+//   function sum(a,b,c){    
+//      console.log(arguments);
+//      var tp=0;
+//       for(var i=0;i<arguments.length;i++){
+
+//         console.log(arguments[i]);
+//           tp+=arguments[i];
+//     }
+//      return tp;
+//   }     
+//        var q=sum(1,2,4);
+
+          
+</script>
+<body>
+        <div class="ff">MYlove</div>
+    <span>石家庄职业技术学院</span>
+    <span>石家庄职业技术学院</span>
+    <!-- <img src="hbbbjhhjjjhjh" alt=""> -->
+    <div class="cc"></div>
+   
+
+</body>
+</html>

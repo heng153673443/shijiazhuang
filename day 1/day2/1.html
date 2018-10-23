@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     
+    
+</head>
+<body>
+    <script>
+    //      ary = [65,34,688,456,8908];
+    //     var ary3 = ary.reverse(function (a,b) {
+    //    return a -b;
+      
+     //   }) reverse() 数组的反转，返回结果跟之前相反
+           
+           
+             //const bbb=12 :是一个常量不能改值
+             //let  bb=12  只可以赋值一次
+            //forEach
+            att=[10,20,30];
+            // att.forEach(function(item,index){
+            //          //用来循环数组的
+            //          //item是循环数组的每一项
+            //          //index是循环数组的每一项的索引
+            // });
+              //filter 过滤
+            var var2=att.filter(function(item,index){
+             return item>20;
+
+            })
+            console.log(var2);
+
+
+
+
+
+         ary = [65,34,688,456,8908];
+        var ary3 = ary.sort(function (a,b) {
+       return a -b;
+      //返回值a - b 就是一个升序
+      // 返回 b-a 就是一个降序
+      })//sort 的返回结果是排好序之后的数组
+    //   console.log(ary3 === ary);
+
+        var n=ary.unshift(7);  //unshift是往首项增加   shift删除首位
+        
+        // var n= ary.push(3,{},{},{},{},f);//给数组的末尾添加项
+        var item= ary.pop(); //返回值item是删除的最后一项
+        
+        
+    
+        // console.log(n);
+        // console.log(ary);
+    
+    //  var obj={name:'张三',age:16};
+    //  for(var k in obj ){
+        //  console.log(k);
+         //
+    //  }
+      function fn(){
+        return 2 ;//return 有两个作用 一个是反回结果  另一个是打断函数的执行
+         //不写return 时默认返回undefined
+        }
+    
+    //   console.log(f);
+    
+    </script>
+</body>
+</html>
